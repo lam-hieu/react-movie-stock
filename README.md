@@ -1,3 +1,5 @@
+# Click to see the live demo: https://lam-hieu.github.io/react-movie-stock
+---------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
