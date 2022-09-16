@@ -34,3 +34,8 @@
 # Tips code
 - rafc -> create Home.jsx Obj
 - rafcp
+
+# Deploy Github pages
+- install: npm install gh-pages-deploy -g
+- add: "homepage": "https://lam-hieu.github.io/react-movie-stock"
+- Thêm vào trong thẻ script: "predeploy": "npm run build", "deploy": "gh-pages -d build"

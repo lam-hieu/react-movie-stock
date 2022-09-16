@@ -11,6 +11,8 @@ import Button from '../button/Button';
 import tmdbApi, { category } from '../../Api/tmdbApi';
 import apiConfig from '../../Api/apiConfig';
 
+import MovieCard from '../movie-card/MovieCard';
+
 
 const MovieList = props => {
 
@@ -21,7 +23,7 @@ const MovieList = props => {
             let response = null;
             const params = {};
 
-            if (props.type !== 'similar') {
+            if (props.type !== 'similar') { //Tương tự
                 switch (props.category) {
                     case category.movie:
                         response = await tmdbApi.getMovieList(props.type, { params });
@@ -48,7 +50,7 @@ const MovieList = props => {
                 {
                     items.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <img src={apiConfig.w500Image(item.poster_path)} alt="" />
+                            <MovieCard item={item} category={props.category} />
                         </SwiperSlide>
                     ))
                 }
@@ -58,7 +60,7 @@ const MovieList = props => {
     );
 }
 
-MovieList.propTypes = {
+MovieList.propTypes = {//kiểm tra các kiểu dữ liệu của các props mà component (hoặc container) nhận vào)
     category: PropTypes.string.isRequired, //Danh mục
     type: PropTypes.string.isRequired // Thể loại
 }

@@ -1,16 +1,20 @@
 import axiosClient from "./axiosClient";
 
+//Danh mục
 export const category = {
     movie: 'movie',
     tv: 'tv',
 }
 
+//Loại movie
 export const movieType = {
     upcoming: 'upcoming',
     popular: 'popular',
     top_rated: 'top_rated'
 }
 
+
+//Loai tv movie
 export const tvType = {
     popular: 'popular',
     top_rated: 'top_rated',
