@@ -1,3 +1,12 @@
+# Click to see the live demo: https://lam-hieu.github.io/react-movie-stock
+# How to deploy react app on Github Pages:
+- Step 1: Dowload this project
+- Step 2: Install: npm install -g gh-pages --save-dev
+- Step 3: In file package.js add: "predeploy": "npm run build",
+                                  "deploy": "gh-pages -d build"
+- Step 4: Add your homepage on Github: https://{user-name}.github.io/{name-your-project}
+- Step 5: And run: npm run deploy
+---------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
